@@ -1,0 +1,4 @@
+node_modules
+dist
+src/hello_world/pkg/
+src/hello_world/target/

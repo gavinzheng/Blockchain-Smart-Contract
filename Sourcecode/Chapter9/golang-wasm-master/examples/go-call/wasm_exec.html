@@ -1,0 +1,51 @@
+<!doctype html>
+<!--
+Copyright 2018 The Go Authors. All rights reserved.
+Use of this source code is governed by a BSD-style
+license that can be found in the LICENSE file.
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Go wasm</title>
+</head>
+
+<body>
+	<script src="wasm_exec.js"></script>
+	<script>
+		if (!WebAssembly.instantiateStreaming) { // polyfill
+			WebAssembly.instantiateStreaming = async (resp, importObject) => {
+				const source = await (await resp).arrayBuffer();
+				return await WebAssembly.instantiate(source, importObject);
+			};
+		}
+
+		const go = new Go();
+		let mod, inst;
+		WebAssembly.instantiateStreaming(fetch("test.wasm"), go.importObject).then((result) => {
+			mod = result.module;
+			inst = result.instance;
+			document.getElementById("runButton").disabled = false;
+		});
+
+		var setPrintMessage
+		async function run() {
+			console.clear()
+			// Create the Promise and store its resolve function
+			const printMessagePromise = new Promise(resolve => {
+				setPrintMessage = resolve
+			})
+			const run = go.run(inst) // Start the wasm binary
+			const printMessage = await printMessagePromise // Wait for the callback reception
+			printMessage(document.querySelector('#messageInput').value) // Invoke the callback
+			await run // Wait for the binary to terminate
+			inst = await WebAssembly.instantiate(mod, go.importObject) // reset instance
+		}
+	</script>
+
+	<input id="messageInput" type="text" value="Hello Wasm!">
+	<button onClick="run();" id="runButton" disabled>Run</button>
+</body>
+
+</html>
