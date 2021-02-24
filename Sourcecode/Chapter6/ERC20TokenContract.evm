@@ -1,0 +1,529 @@
+    /* "ERC20TokenContract.sol":27:748  contract ERC20TokenContract {... */
+  mstore(0x40, 0x80)
+    /* "ERC20TokenContract.sol":134:263  constructor(uint256 _initialSupply) public {... */
+  callvalue
+    /* "--CODEGEN--":8:17   */
+  dup1
+    /* "--CODEGEN--":5:7   */
+  iszero
+  tag_1
+  jumpi
+    /* "--CODEGEN--":30:31   */
+  0x0
+    /* "--CODEGEN--":27:28   */
+  dup1
+    /* "--CODEGEN--":20:32   */
+  revert
+    /* "--CODEGEN--":5:7   */
+tag_1:
+    /* "ERC20TokenContract.sol":134:263  constructor(uint256 _initialSupply) public {... */
+  pop
+  mload(0x40)
+  0x20
+  dup1
+  bytecodeSize
+  dup4
+  codecopy
+  dup2
+  add
+  dup1
+  0x40
+  mstore
+  dup2
+  add
+  swap1
+  dup1
+  dup1
+  mload
+  swap1
+  0x20
+  add
+  swap1
+  swap3
+  swap2
+  swap1
+  pop
+  pop
+  pop
+    /* "ERC20TokenContract.sol":199:213  _initialSupply */
+  dup1
+    /* "ERC20TokenContract.sol":184:196  _totalSupply */
+  0x0
+    /* "ERC20TokenContract.sol":184:213  _totalSupply = _initialSupply */
+  dup2
+  swap1
+  sstore
+  pop
+    /* "ERC20TokenContract.sol":243:257  _initialSupply */
+  dup1
+    /* "ERC20TokenContract.sol":220:228  balances */
+  0x1
+    /* "ERC20TokenContract.sol":220:240  balances[msg.sender] */
+  0x0
+    /* "ERC20TokenContract.sol":229:239  msg.sender */
+  caller
+    /* "ERC20TokenContract.sol":220:240  balances[msg.sender] */
+  0xffffffffffffffffffffffffffffffffffffffff
+  and
+  0xffffffffffffffffffffffffffffffffffffffff
+  and
+  dup2
+  mstore
+  0x20
+  add
+  swap1
+  dup2
+  mstore
+  0x20
+  add
+  0x0
+  keccak256
+    /* "ERC20TokenContract.sol":220:257  balances[msg.sender] = _initialSupply */
+  dup2
+  swap1
+  sstore
+  pop
+    /* "ERC20TokenContract.sol":134:263  constructor(uint256 _initialSupply) public {... */
+  pop
+    /* "ERC20TokenContract.sol":27:748  contract ERC20TokenContract {... */
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x0
+  codecopy
+  0x0
+  return
+stop
+
+sub_0: assembly {
+        /* "ERC20TokenContract.sol":27:748  contract ERC20TokenContract {... */
+      mstore(0x40, 0x80)
+      jumpi(tag_1, lt(calldatasize, 0x4))
+      calldataload(0x0)
+      0x100000000000000000000000000000000000000000000000000000000
+      swap1
+      div
+      0xffffffff
+      and
+      dup1
+      0x18160ddd
+      eq
+      tag_2
+      jumpi
+      dup1
+      0x70a08231
+      eq
+      tag_3
+      jumpi
+      dup1
+      0xa9059cbb
+      eq
+      tag_4
+      jumpi
+    tag_1:
+      0x0
+      dup1
+      revert
+        /* "ERC20TokenContract.sol":269:354  function totalSupply() public view returns (uint256) {... */
+    tag_2:
+      callvalue
+        /* "--CODEGEN--":8:17   */
+      dup1
+        /* "--CODEGEN--":5:7   */
+      iszero
+      tag_5
+      jumpi
+        /* "--CODEGEN--":30:31   */
+      0x0
+        /* "--CODEGEN--":27:28   */
+      dup1
+        /* "--CODEGEN--":20:32   */
+      revert
+        /* "--CODEGEN--":5:7   */
+    tag_5:
+        /* "ERC20TokenContract.sol":269:354  function totalSupply() public view returns (uint256) {... */
+      pop
+      tag_6
+      jump(tag_7)
+    tag_6:
+      mload(0x40)
+      dup1
+      dup3
+      dup2
+      mstore
+      0x20
+      add
+      swap2
+      pop
+      pop
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "ERC20TokenContract.sol":360:461  function balanceOf(address _owner) public view returns (uint256) {... */
+    tag_3:
+      callvalue
+        /* "--CODEGEN--":8:17   */
+      dup1
+        /* "--CODEGEN--":5:7   */
+      iszero
+      tag_8
+      jumpi
+        /* "--CODEGEN--":30:31   */
+      0x0
+        /* "--CODEGEN--":27:28   */
+      dup1
+        /* "--CODEGEN--":20:32   */
+      revert
+        /* "--CODEGEN--":5:7   */
+    tag_8:
+        /* "ERC20TokenContract.sol":360:461  function balanceOf(address _owner) public view returns (uint256) {... */
+      pop
+      tag_9
+      0x4
+      dup1
+      calldatasize
+      sub
+      dup2
+      add
+      swap1
+      dup1
+      dup1
+      calldataload
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      swap1
+      0x20
+      add
+      swap1
+      swap3
+      swap2
+      swap1
+      pop
+      pop
+      pop
+      jump(tag_10)
+    tag_9:
+      mload(0x40)
+      dup1
+      dup3
+      dup2
+      mstore
+      0x20
+      add
+      swap2
+      pop
+      pop
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "ERC20TokenContract.sol":467:743  function transfer(address _to, uint256 _value) public returns (bool) {... */
+    tag_4:
+      callvalue
+        /* "--CODEGEN--":8:17   */
+      dup1
+        /* "--CODEGEN--":5:7   */
+      iszero
+      tag_11
+      jumpi
+        /* "--CODEGEN--":30:31   */
+      0x0
+        /* "--CODEGEN--":27:28   */
+      dup1
+        /* "--CODEGEN--":20:32   */
+      revert
+        /* "--CODEGEN--":5:7   */
+    tag_11:
+        /* "ERC20TokenContract.sol":467:743  function transfer(address _to, uint256 _value) public returns (bool) {... */
+      pop
+      tag_12
+      0x4
+      dup1
+      calldatasize
+      sub
+      dup2
+      add
+      swap1
+      dup1
+      dup1
+      calldataload
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      swap1
+      0x20
+      add
+      swap1
+      swap3
+      swap2
+      swap1
+      dup1
+      calldataload
+      swap1
+      0x20
+      add
+      swap1
+      swap3
+      swap2
+      swap1
+      pop
+      pop
+      pop
+      jump(tag_13)
+    tag_12:
+      mload(0x40)
+      dup1
+      dup3
+      iszero
+      iszero
+      iszero
+      iszero
+      dup2
+      mstore
+      0x20
+      add
+      swap2
+      pop
+      pop
+      mload(0x40)
+      dup1
+      swap2
+      sub
+      swap1
+      return
+        /* "ERC20TokenContract.sol":269:354  function totalSupply() public view returns (uint256) {... */
+    tag_7:
+        /* "ERC20TokenContract.sol":313:320  uint256 */
+      0x0
+        /* "ERC20TokenContract.sol":336:348  _totalSupply */
+      dup1
+      sload
+        /* "ERC20TokenContract.sol":329:348  return _totalSupply */
+      swap1
+      pop
+        /* "ERC20TokenContract.sol":269:354  function totalSupply() public view returns (uint256) {... */
+      swap1
+      jump	// out
+        /* "ERC20TokenContract.sol":360:461  function balanceOf(address _owner) public view returns (uint256) {... */
+    tag_10:
+        /* "ERC20TokenContract.sol":416:423  uint256 */
+      0x0
+        /* "ERC20TokenContract.sol":439:447  balances */
+      0x1
+        /* "ERC20TokenContract.sol":439:455  balances[_owner] */
+      0x0
+        /* "ERC20TokenContract.sol":448:454  _owner */
+      dup4
+        /* "ERC20TokenContract.sol":439:455  balances[_owner] */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap1
+      dup2
+      mstore
+      0x20
+      add
+      0x0
+      keccak256
+      sload
+        /* "ERC20TokenContract.sol":432:455  return balances[_owner] */
+      swap1
+      pop
+        /* "ERC20TokenContract.sol":360:461  function balanceOf(address _owner) public view returns (uint256) {... */
+      swap2
+      swap1
+      pop
+      jump	// out
+        /* "ERC20TokenContract.sol":467:743  function transfer(address _to, uint256 _value) public returns (bool) {... */
+    tag_13:
+        /* "ERC20TokenContract.sol":530:534  bool */
+      0x0
+        /* "ERC20TokenContract.sol":566:567  0 */
+      dup1
+        /* "ERC20TokenContract.sol":551:568  _to != address(0) */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+        /* "ERC20TokenContract.sol":551:554  _to */
+      dup4
+        /* "ERC20TokenContract.sol":551:568  _to != address(0) */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      eq
+      iszero
+        /* "ERC20TokenContract.sol":543:569  require(_to != address(0)) */
+      iszero
+      iszero
+      tag_17
+      jumpi
+      0x0
+      dup1
+      revert
+    tag_17:
+        /* "ERC20TokenContract.sol":594:602  balances */
+      0x1
+        /* "ERC20TokenContract.sol":594:614  balances[msg.sender] */
+      0x0
+        /* "ERC20TokenContract.sol":603:613  msg.sender */
+      caller
+        /* "ERC20TokenContract.sol":594:614  balances[msg.sender] */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap1
+      dup2
+      mstore
+      0x20
+      add
+      0x0
+      keccak256
+      sload
+        /* "ERC20TokenContract.sol":584:590  _value */
+      dup3
+        /* "ERC20TokenContract.sol":584:614  _value <= balances[msg.sender] */
+      gt
+      iszero
+        /* "ERC20TokenContract.sol":576:615  require(_value <= balances[msg.sender]) */
+      iszero
+      iszero
+      tag_18
+      jumpi
+      0x0
+      dup1
+      revert
+    tag_18:
+        /* "ERC20TokenContract.sol":668:674  _value */
+      dup2
+        /* "ERC20TokenContract.sol":645:653  balances */
+      0x1
+        /* "ERC20TokenContract.sol":645:665  balances[msg.sender] */
+      0x0
+        /* "ERC20TokenContract.sol":654:664  msg.sender */
+      caller
+        /* "ERC20TokenContract.sol":645:665  balances[msg.sender] */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap1
+      dup2
+      mstore
+      0x20
+      add
+      0x0
+      keccak256
+      sload
+        /* "ERC20TokenContract.sol":645:674  balances[msg.sender] - _value */
+      sub
+        /* "ERC20TokenContract.sol":622:630  balances */
+      0x1
+        /* "ERC20TokenContract.sol":622:642  balances[msg.sender] */
+      0x0
+        /* "ERC20TokenContract.sol":631:641  msg.sender */
+      caller
+        /* "ERC20TokenContract.sol":622:642  balances[msg.sender] */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap1
+      dup2
+      mstore
+      0x20
+      add
+      0x0
+      keccak256
+        /* "ERC20TokenContract.sol":622:674  balances[msg.sender] = balances[msg.sender] - _value */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "ERC20TokenContract.sol":713:719  _value */
+      dup2
+        /* "ERC20TokenContract.sol":697:705  balances */
+      0x1
+        /* "ERC20TokenContract.sol":697:710  balances[_to] */
+      0x0
+        /* "ERC20TokenContract.sol":706:709  _to */
+      dup6
+        /* "ERC20TokenContract.sol":697:710  balances[_to] */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap1
+      dup2
+      mstore
+      0x20
+      add
+      0x0
+      keccak256
+      sload
+        /* "ERC20TokenContract.sol":697:719  balances[_to] + _value */
+      add
+        /* "ERC20TokenContract.sol":681:689  balances */
+      0x1
+        /* "ERC20TokenContract.sol":681:694  balances[_to] */
+      0x0
+        /* "ERC20TokenContract.sol":690:693  _to */
+      dup6
+        /* "ERC20TokenContract.sol":681:694  balances[_to] */
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      0xffffffffffffffffffffffffffffffffffffffff
+      and
+      dup2
+      mstore
+      0x20
+      add
+      swap1
+      dup2
+      mstore
+      0x20
+      add
+      0x0
+      keccak256
+        /* "ERC20TokenContract.sol":681:719  balances[_to] = balances[_to] + _value */
+      dup2
+      swap1
+      sstore
+      pop
+        /* "ERC20TokenContract.sol":733:737  true */
+      0x1
+        /* "ERC20TokenContract.sol":726:737  return true */
+      swap1
+      pop
+        /* "ERC20TokenContract.sol":467:743  function transfer(address _to, uint256 _value) public returns (bool) {... */
+      swap3
+      swap2
+      pop
+      pop
+      jump	// out
+
+    auxdata: 0xa165627a7a723058207da3059c8df987d725f9a32668680a40453cac990a9c9c4ad383d977718f381c0029
+}

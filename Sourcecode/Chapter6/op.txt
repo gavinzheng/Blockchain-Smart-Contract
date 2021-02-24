@@ -1,0 +1,34 @@
+
+
+let foodCart;
+FoodCart.deployed().then((instance) => { foodCart = instance; });
+
+
+let addFoodItemToCart = (foodName, price) => {foodCart.addFoodItem(foodName, price).then((trxn) => { const details = trxn.logs[0].args; details.sku = details.sku.toNumber(); details.price = details.price.toNumber(); details.state = trxn.logs[0].event; console.log(details);});}
+
+addFoodItemToCart('Fried Rice', 10);
+addFoodItemToCart('Chicken Pepper Soup', 10);
+addFoodItemToCart('Pepperoni Pizza', 50);
+
+const buyerAddress = web3.eth.accounts[1];
+
+
+
+let buyFoodItemFromCart = (itemSku, amount) => {foodCart.buyFoodItem(itemSku, {from: buyerAddress, value: amount}).then((trxn) => { const details = trxn.logs[0].args; details.sku = details.sku.toNumber(); details.price = details.price.toNumber(); details.state = trxn.logs[0].event; console.log(details);});}
+
+let accounts = await web3.eth.getAccounts()
+ buyerAddress = accounts[1]
+
+buyFoodItemFromCart(0, 10);
+
+
+buyFoodItemFromCart(6, 10);
+
+
+buyFoodItemFromCart(1, 5);
+
+truffle develop --log
+
+
+
+

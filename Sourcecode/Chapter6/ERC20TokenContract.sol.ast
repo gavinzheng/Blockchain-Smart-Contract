@@ -1,0 +1,250 @@
+PragmaDirective
+   Source: "pragma solidity 0.4.24;"
+ContractDefinition "ERC20TokenContract"
+   Source: "contract ERC20TokenContract {\r\n  \r\n  uint256 _totalSupply;\r\n  mapping(address => uint256) balances;\r\n  \r\n  constructor(uint256 _initialSupply) public {\r\n    _totalSupply = _initialSupply;\r\n    balances[msg.sender] = _initialSupply;\r\n  }\r\n\r\n  function totalSupply() public view returns (uint256) {\r\n    return _totalSupply;\r\n  }\r\n\r\n  function balanceOf(address _owner) public view returns (uint256) {\r\n    return balances[_owner];\r\n  }\r\n\r\n  function transfer(address _to, uint256 _value) public returns (bool) {\r\n    require(_to != address(0));\r\n    require(_value <= balances[msg.sender]);\r\n    balances[msg.sender] = balances[msg.sender] - _value;\r\n    balances[_to] = balances[_to] + _value;\r\n    return true;\r\n  }\r\n\r\n}"
+  VariableDeclaration "_totalSupply"
+     Type: uint256
+     Source: "uint256 _totalSupply"
+    ElementaryTypeName uint256
+       Source: "uint256"
+  VariableDeclaration "balances"
+     Type: mapping(address => uint256)
+     Source: "mapping(address => uint256) balances"
+    Mapping
+       Source: "mapping(address => uint256)"
+      ElementaryTypeName address
+         Source: "address"
+      ElementaryTypeName uint256
+         Source: "uint256"
+  FunctionDefinition "" - public
+     Source: "constructor(uint256 _initialSupply) public {\r\n    _totalSupply = _initialSupply;\r\n    balances[msg.sender] = _initialSupply;\r\n  }"
+    ParameterList
+       Source: "(uint256 _initialSupply)"
+      VariableDeclaration "_initialSupply"
+         Type: uint256
+         Source: "uint256 _initialSupply"
+        ElementaryTypeName uint256
+           Source: "uint256"
+    ParameterList
+       Source: ""
+    Block
+       Source: "{\r\n    _totalSupply = _initialSupply;\r\n    balances[msg.sender] = _initialSupply;\r\n  }"
+      ExpressionStatement
+         Source: "_totalSupply = _initialSupply"
+        Assignment using operator =
+           Type: uint256
+           Source: "_totalSupply = _initialSupply"
+          Identifier _totalSupply
+             Type: uint256
+             Source: "_totalSupply"
+          Identifier _initialSupply
+             Type: uint256
+             Source: "_initialSupply"
+      ExpressionStatement
+         Source: "balances[msg.sender] = _initialSupply"
+        Assignment using operator =
+           Type: uint256
+           Source: "balances[msg.sender] = _initialSupply"
+          IndexAccess
+             Type: uint256
+             Source: "balances[msg.sender]"
+            Identifier balances
+               Type: mapping(address => uint256)
+               Source: "balances"
+            MemberAccess to member sender
+               Type: address
+               Source: "msg.sender"
+              Identifier msg
+                 Type: msg
+                 Source: "msg"
+          Identifier _initialSupply
+             Type: uint256
+             Source: "_initialSupply"
+  FunctionDefinition "totalSupply" - public - const
+     Source: "function totalSupply() public view returns (uint256) {\r\n    return _totalSupply;\r\n  }"
+    ParameterList
+       Source: "()"
+    ParameterList
+       Source: "(uint256)"
+      VariableDeclaration ""
+         Type: uint256
+         Source: "uint256"
+        ElementaryTypeName uint256
+           Source: "uint256"
+    Block
+       Source: "{\r\n    return _totalSupply;\r\n  }"
+      Return
+         Source: "return _totalSupply"
+        Identifier _totalSupply
+           Type: uint256
+           Source: "_totalSupply"
+  FunctionDefinition "balanceOf" - public - const
+     Source: "function balanceOf(address _owner) public view returns (uint256) {\r\n    return balances[_owner];\r\n  }"
+    ParameterList
+       Source: "(address _owner)"
+      VariableDeclaration "_owner"
+         Type: address
+         Source: "address _owner"
+        ElementaryTypeName address
+           Source: "address"
+    ParameterList
+       Source: "(uint256)"
+      VariableDeclaration ""
+         Type: uint256
+         Source: "uint256"
+        ElementaryTypeName uint256
+           Source: "uint256"
+    Block
+       Source: "{\r\n    return balances[_owner];\r\n  }"
+      Return
+         Source: "return balances[_owner]"
+        IndexAccess
+           Type: uint256
+           Source: "balances[_owner]"
+          Identifier balances
+             Type: mapping(address => uint256)
+             Source: "balances"
+          Identifier _owner
+             Type: address
+             Source: "_owner"
+  FunctionDefinition "transfer" - public
+     Source: "function transfer(address _to, uint256 _value) public returns (bool) {\r\n    require(_to != address(0));\r\n    require(_value <= balances[msg.sender]);\r\n    balances[msg.sender] = balances[msg.sender] - _value;\r\n    balances[_to] = balances[_to] + _value;\r\n    return true;\r\n  }"
+    ParameterList
+       Source: "(address _to, uint256 _value)"
+      VariableDeclaration "_to"
+         Type: address
+         Source: "address _to"
+        ElementaryTypeName address
+           Source: "address"
+      VariableDeclaration "_value"
+         Type: uint256
+         Source: "uint256 _value"
+        ElementaryTypeName uint256
+           Source: "uint256"
+    ParameterList
+       Source: "(bool)"
+      VariableDeclaration ""
+         Type: bool
+         Source: "bool"
+        ElementaryTypeName bool
+           Source: "bool"
+    Block
+       Source: "{\r\n    require(_to != address(0));\r\n    require(_value <= balances[msg.sender]);\r\n    balances[msg.sender] = balances[msg.sender] - _value;\r\n    balances[_to] = balances[_to] + _value;\r\n    return true;\r\n  }"
+      ExpressionStatement
+         Source: "require(_to != address(0))"
+        FunctionCall
+           Type: tuple()
+           Source: "require(_to != address(0))"
+          Identifier require
+             Type: function (bool) pure
+             Source: "require"
+          BinaryOperation using operator !=
+             Type: bool
+             Source: "_to != address(0)"
+            Identifier _to
+               Type: address
+               Source: "_to"
+            FunctionCall
+               Type: address
+               Source: "address(0)"
+              ElementaryTypeNameExpression address
+                 Type: type(address)
+                 Source: "address"
+              Literal, token: [no token] value: 0
+                 Type: int_const 0
+                 Source: "0"
+      ExpressionStatement
+         Source: "require(_value <= balances[msg.sender])"
+        FunctionCall
+           Type: tuple()
+           Source: "require(_value <= balances[msg.sender])"
+          Identifier require
+             Type: function (bool) pure
+             Source: "require"
+          BinaryOperation using operator <=
+             Type: bool
+             Source: "_value <= balances[msg.sender]"
+            Identifier _value
+               Type: uint256
+               Source: "_value"
+            IndexAccess
+               Type: uint256
+               Source: "balances[msg.sender]"
+              Identifier balances
+                 Type: mapping(address => uint256)
+                 Source: "balances"
+              MemberAccess to member sender
+                 Type: address
+                 Source: "msg.sender"
+                Identifier msg
+                   Type: msg
+                   Source: "msg"
+      ExpressionStatement
+         Source: "balances[msg.sender] = balances[msg.sender] - _value"
+        Assignment using operator =
+           Type: uint256
+           Source: "balances[msg.sender] = balances[msg.sender] - _value"
+          IndexAccess
+             Type: uint256
+             Source: "balances[msg.sender]"
+            Identifier balances
+               Type: mapping(address => uint256)
+               Source: "balances"
+            MemberAccess to member sender
+               Type: address
+               Source: "msg.sender"
+              Identifier msg
+                 Type: msg
+                 Source: "msg"
+          BinaryOperation using operator -
+             Type: uint256
+             Source: "balances[msg.sender] - _value"
+            IndexAccess
+               Type: uint256
+               Source: "balances[msg.sender]"
+              Identifier balances
+                 Type: mapping(address => uint256)
+                 Source: "balances"
+              MemberAccess to member sender
+                 Type: address
+                 Source: "msg.sender"
+                Identifier msg
+                   Type: msg
+                   Source: "msg"
+            Identifier _value
+               Type: uint256
+               Source: "_value"
+      ExpressionStatement
+         Source: "balances[_to] = balances[_to] + _value"
+        Assignment using operator =
+           Type: uint256
+           Source: "balances[_to] = balances[_to] + _value"
+          IndexAccess
+             Type: uint256
+             Source: "balances[_to]"
+            Identifier balances
+               Type: mapping(address => uint256)
+               Source: "balances"
+            Identifier _to
+               Type: address
+               Source: "_to"
+          BinaryOperation using operator +
+             Type: uint256
+             Source: "balances[_to] + _value"
+            IndexAccess
+               Type: uint256
+               Source: "balances[_to]"
+              Identifier balances
+                 Type: mapping(address => uint256)
+                 Source: "balances"
+              Identifier _to
+                 Type: address
+                 Source: "_to"
+            Identifier _value
+               Type: uint256
+               Source: "_value"
+      Return
+         Source: "return true"
+        Literal, token: true value: true
+           Type: bool
+           Source: "true"
