@@ -41,7 +41,7 @@
 **[Ethereum Smart Contract Programming in Solidity](https://www.amazon.com/Ethereum-Smart-Contract-Development-Solidity-ebook/dp/B08H4QV8D5/ref=sr_1_1?crid=3JSNWHJR19HFV&dchild=1&keywords=ethereum+smart+contract+development+in+solidity&qid=1599823191&sprefix=Ethereum+Smart+contract%2Caps%2C458&sr=8-1)** <br/>
 ![Ethereum Smart Contract Programming in Solidity封面](https://gitee.com/gavinzheng731/blockchain-and-smart-contract/raw/master/image/Ehtereum%20Smart%20Contract%20Development%20in%20Solidity.jpg)
 
-**教育区块链:分布式学习时代的教育模式创新**<br/>
+**[教育区块链:分布式学习时代的教育模式创新](http://product.dangdang.com/29204174.html)**<br/>
 ![教育区块链封面](https://github.com/gavinzheng/Blockchain-Smart-Contract/blob/master/image/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%99%E8%82%B2%E5%B0%81%E9%9D%A2.jpg)<br/>
 ![教育区块链封底](https://github.com/gavinzheng/Blockchain-Smart-Contract/blob/master/image/%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%99%E8%82%B2%E5%B0%81%E9%9D%A2%E5%B0%81%E5%BA%95.jpg)<br/>
 
