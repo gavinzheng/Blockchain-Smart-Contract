@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "c",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "d",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "e",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "f",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "g",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "h",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "addUints",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/stacktoodeep.sol": "StackTooDeepTest1"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/stacktoodeep.sol": {
+			"keccak256": "0xb4697830457741dc600f83b5c538f800954cca7700ca50bc338b3c7739294a72",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://103c5641eacff2509f95470bb76bfbdbc9934ff61658a74467cb2321e4b549d9",
+				"dweb:/ipfs/QmUKH7iv9XDUc8f887FmeA4NYNjxB8SEAfESuGcdXDHoQE"
+			]
+		}
+	},
+	"version": 1
+}

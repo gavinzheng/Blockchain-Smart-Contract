@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface for any contract that wants to support safeTransfers from ERC721 asset contracts.",
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"details": "The ERC721 smart contract calls this function on the recipient after a `safeTransfer`. This function MUST return the function selector, otherwise the caller will revert the transaction. The selector to be returned can be obtained as `this.onERC721Received.selector`. This function MAY throw to revert and reject the transfer. Note: the ERC721 contract address is always the message sender.",
+					"params": {
+						"data": "Additional data with no specified format",
+						"from": "The address which previously owned the token",
+						"operator": "The address which called `safeTransferFrom` function",
+						"tokenId": "The NFT identifier which is being transferred"
+					},
+					"return": "`bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`"
+				}
+			},
+			"title": "ERC721 token receiver interface"
+		},
+		"userdoc": {
+			"methods": {
+				"onERC721Received(address,address,uint256,bytes)": {
+					"notice": "Handle the receipt of an NFT"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/AddressTokenProd.sol": "IERC721Receiver"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/AddressTokenProd.sol": {
+			"keccak256": "0x962796090dace327f578c54174721112fcd0c8ed6263152fb156cbd6d6455838",
+			"urls": [
+				"bzz-raw://7a19c24887ae42393921b61bcdcc5558d9027696d0e1218960fd8fba74a6341a",
+				"dweb:/ipfs/Qmd9A4VcYULBSNh1UMvtsiHhXcjiw9pUtszJo5oQAehvdG"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,43 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/testmapping.sol": "testmapping"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/testmapping.sol": {
+			"keccak256": "0x837635e7c59e3fc6736d9696e81da43646b5bec4017c0a9432e7690e06c54550",
+			"urls": [
+				"bzzr://ee3be6074f4b4341fb81a55c711aa759f12416fe83470a50cbd93a70ccc9caa9"
+			]
+		}
+	},
+	"version": 1
+}

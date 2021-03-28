@@ -1,0 +1,214 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "proposal",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposals",
+				"outputs": [
+					{
+						"name": "name",
+						"type": "bytes32"
+					},
+					{
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "chairperson",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "delegate",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "winningProposal",
+				"outputs": [
+					{
+						"name": "winningProposal_",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "voter",
+						"type": "address"
+					}
+				],
+				"name": "giveRightToVote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"name": "weight",
+						"type": "uint256"
+					},
+					{
+						"name": "voted",
+						"type": "bool"
+					},
+					{
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"name": "vote",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "winnerName",
+				"outputs": [
+					{
+						"name": "winnerName_",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "proposalNames",
+						"type": "bytes32[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"delegate(address)": {
+					"details": "Delegate your vote to the voter 'to'.",
+					"params": {
+						"to": "address to which vote is delegated"
+					}
+				},
+				"giveRightToVote(address)": {
+					"details": "Give 'voter' the right to vote on this ballot. May only be called by 'chairperson'.",
+					"params": {
+						"voter": "address of voter"
+					}
+				},
+				"vote(uint256)": {
+					"details": "Give your vote (including votes delegated to you) to proposal 'proposals[proposal].name'.",
+					"params": {
+						"proposal": "index of proposal in the proposals array"
+					}
+				},
+				"winnerName()": {
+					"details": "Calls winningProposal() function to get the index of the winner contained in the proposals array and then",
+					"return": "winnerName_ the name of the winner"
+				},
+				"winningProposal()": {
+					"details": "Computes the winning proposal taking all previous votes into account.",
+					"return": "winningProposal_ index of winning proposal in the proposals array"
+				}
+			},
+			"title": "Ballot"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/3_Ballot.sol": "Ballot"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/3_Ballot.sol": {
+			"keccak256": "0xb5cf7721806a100913a616711fe86acd30e5ed34e185bce00d552cabec7aa89c",
+			"urls": [
+				"bzzr://cdbe1b81d86de93d8e9d018976f2a001f110c5c893499e02f520f85f58dbcb69"
+			]
+		}
+	},
+	"version": 1
+}

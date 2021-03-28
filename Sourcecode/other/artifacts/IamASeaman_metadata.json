@@ -1,0 +1,180 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "VoucherCode",
+						"type": "string"
+					}
+				],
+				"name": "ActivateVoucher",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "UseVoucher",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "UniqueIdentifier",
+						"type": "uint256"
+					}
+				],
+				"name": "RingRing",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "NewAddress",
+						"type": "address"
+					}
+				],
+				"name": "SetCaptainsAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "JobID",
+						"type": "uint256"
+					},
+					{
+						"name": "ErrorMsg",
+						"type": "string"
+					}
+				],
+				"name": "CaptainsError",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "KrakenQuery",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "JobID",
+						"type": "uint256"
+					},
+					{
+						"name": "result",
+						"type": "string"
+					}
+				],
+				"name": "CaptainsResult",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "Result",
+						"type": "string"
+					}
+				],
+				"name": "KrakenQuery_Success",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "ErrorMsg",
+						"type": "string"
+					}
+				],
+				"name": "KrakenQuery_Failure",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "KrakenQuery_Pending",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/iamseaman.sol": "IamASeaman"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/iamseaman.sol": {
+			"keccak256": "0xa790b85e4f927c17dd2eb8ce53b4622ab3f96a5aeae07d1aff8a7dcfae4f0d68",
+			"urls": [
+				"bzzr://7043c58d2f379c68ac9f06c76a55c08203d426cd8814b417da1631652e5baa8a"
+			]
+		},
+		"https://github.com/CaptainJavaScript/Solidity/usingCaptainJS_v2.sol": {
+			"keccak256": "0xd178b6f85f08ef3b73207729e455cd04591d003aba3e34aaabc514b95692a227",
+			"urls": [
+				"bzzr://0759e6b361275aa51f99135fae8d9274dff29e603cd2b2e2a741ba5b9cd39c2c"
+			]
+		}
+	},
+	"version": 1
+}

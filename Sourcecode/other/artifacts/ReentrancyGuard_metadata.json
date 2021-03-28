@@ -1,0 +1,38 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Remco Bloemen <remco@2π.com>, Eenae <alexey@mixbytes.io>\r",
+			"methods": {},
+			"title": "Helps contracts guard against reentrancy attacks.\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/document721.sol": "ReentrancyGuard"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/document721.sol": {
+			"keccak256": "0x527c4b7a380ab36eeac3e753d3430f5cf2cd3e26ad95baf24cbff6f924cccf40",
+			"urls": [
+				"bzzr://8acfd1870abc4829de9a0198c0e00ac0dd525b83436896ce02ad12a6673f5e52"
+			]
+		}
+	},
+	"version": 1
+}

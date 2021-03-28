@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Matt Condon (@shrugs)",
+			"details": "Implements ERC165 using a lookup table.",
+			"methods": {
+				"constructor": {
+					"details": "A contract implementing SupportsInterfaceWithLookup implement ERC165 itself"
+				},
+				"supportsInterface(bytes4)": {
+					"details": "implement supportsInterface(bytes4) using a lookup table"
+				}
+			},
+			"title": "ERC165"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/AddressTokenProd.sol": "ERC165"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/AddressTokenProd.sol": {
+			"keccak256": "0x962796090dace327f578c54174721112fcd0c8ed6263152fb156cbd6d6455838",
+			"urls": [
+				"bzz-raw://7a19c24887ae42393921b61bcdcc5558d9027696d0e1218960fd8fba74a6341a",
+				"dweb:/ipfs/Qmd9A4VcYULBSNh1UMvtsiHhXcjiw9pUtszJo5oQAehvdG"
+			]
+		}
+	},
+	"version": 1
+}

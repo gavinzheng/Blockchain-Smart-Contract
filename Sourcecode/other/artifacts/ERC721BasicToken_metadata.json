@@ -1,0 +1,427 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "InterfaceId_ERC165",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "exists",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"approve(address,uint256)": {
+					"details": "Approves another address to transfer the given token ID\r The zero address indicates there is no approved address.\r There can only be one approved address per token at a given time.\r Can only be called by the token owner or an approved operator.\r",
+					"params": {
+						"_to": "address to be approved for the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be approved\r"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address\r",
+					"params": {
+						"_owner": "address to query the balance of\r"
+					},
+					"return": "uint256 representing the amount owned by the passed address\r"
+				},
+				"exists(uint256)": {
+					"details": "Returns whether the specified token exists\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query the existence of\r"
+					},
+					"return": "whether the token exists\r"
+				},
+				"getApproved(uint256)": {
+					"details": "Gets the approved address for a token ID, or zero if no address set\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query the approval of\r"
+					},
+					"return": "address currently approved for the given token ID\r"
+				},
+				"isApprovedForAll(address,address)": {
+					"details": "Tells whether an operator is approved by a given owner\r",
+					"params": {
+						"_operator": "operator address which you want to query the approval of\r",
+						"_owner": "owner address which you want to query the approval of\r"
+					},
+					"return": "bool whether the given operator is approved by the given owner\r"
+				},
+				"ownerOf(uint256)": {
+					"details": "Gets the owner of the specified token ID\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query the owner of\r"
+					},
+					"return": "owner address currently marked as the owner of the given token ID\r"
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"details": "Safely transfers the ownership of a given token ID to another address\r If the target address is a contract, it must implement `onERC721Received`,\r which is called upon a safe transfer, and return the magic value\r `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise,\r the transfer is reverted.\r \t   * Requires the msg sender to be the owner, approved, or operator\r",
+					"params": {
+						"_from": "current owner of the token\r",
+						"_to": "address to receive the ownership of the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be transferred\r"
+					}
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"details": "Safely transfers the ownership of a given token ID to another address\r If the target address is a contract, it must implement `onERC721Received`,\r which is called upon a safe transfer, and return the magic value\r `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise,\r the transfer is reverted.\r Requires the msg sender to be the owner, approved, or operator\r",
+					"params": {
+						"_data": "bytes data to send along with a safe transfer check\r",
+						"_from": "current owner of the token\r",
+						"_to": "address to receive the ownership of the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be transferred\r"
+					}
+				},
+				"setApprovalForAll(address,bool)": {
+					"details": "Sets or unsets the approval of a given operator\r An operator is allowed to transfer all tokens of the sender on their behalf\r",
+					"params": {
+						"_approved": "representing the status of the approval to be set\r",
+						"_to": "operator address to set the approval\r"
+					}
+				},
+				"supportsInterface(bytes4)": {
+					"details": "implement supportsInterface(bytes4) using a lookup table\r"
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Transfers the ownership of a given token ID to another address\r Usage of this method is discouraged, use `safeTransferFrom` whenever possible\r Requires the msg sender to be the owner, approved, or operator\r",
+					"params": {
+						"_from": "current owner of the token\r",
+						"_to": "address to receive the ownership of the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be transferred\r"
+					}
+				}
+			},
+			"title": "ERC721 Non-Fungible Token Standard basic implementation\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/document721.sol": "ERC721BasicToken"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/document721.sol": {
+			"keccak256": "0x527c4b7a380ab36eeac3e753d3430f5cf2cd3e26ad95baf24cbff6f924cccf40",
+			"urls": [
+				"bzzr://8acfd1870abc4829de9a0198c0e00ac0dd525b83436896ce02ad12a6673f5e52"
+			]
+		}
+	},
+	"version": 1
+}

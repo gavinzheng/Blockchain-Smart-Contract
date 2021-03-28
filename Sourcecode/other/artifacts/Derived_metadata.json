@@ -1,0 +1,48 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"name": "_y",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/inherit.sol": "Derived"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/inherit.sol": {
+			"keccak256": "0x410a38cf4b2e30f82fa48287b84e1703f68e246473c29b28aa79bebabe922cc0",
+			"urls": [
+				"bzzr://e4c986708e00b3ab6b9cc86a0dafdfa19453a813edc0fe1942b8d4d01c72297c"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,67 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50604051602080607b83398101806040528101908080519060200190929190505050806000819055505060358060466000396000f3006080604052600080fd00a165627a7a72305820624ec15e3d12fdc78eb00d729bb54c9eac9542669a7f48c67668ba2e75fbd57e0029",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x40 MLOAD PUSH1 0x20 DUP1 PUSH1 0x7B DUP4 CODECOPY DUP2 ADD DUP1 PUSH1 0x40 MSTORE DUP2 ADD SWAP1 DUP1 DUP1 MLOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP DUP1 PUSH1 0x0 DUP2 SWAP1 SSTORE POP POP PUSH1 0x35 DUP1 PUSH1 0x46 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 PUSH3 0x4EC15E RETURNDATASIZE SLT REVERT 0xc7 DUP15 0xb0 0xd PUSH19 0x9BB54C9EAC9542669A7F48C67668BA2E75FBD5 PUSH31 0x290000000000000000000000000000000000000000000000000000000000 ",
+			"sourceMap": "25:71:0:-;;;59:34;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:34:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;88:2;84:1;:6;;;;59:34;25:71;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fd00a165627a7a72305820624ec15e3d12fdc78eb00d729bb54c9eac9542669a7f48c67668ba2e75fbd57e0029",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 PUSH3 0x4EC15E RETURNDATASIZE SLT REVERT 0xc7 DUP15 0xb0 0xd PUSH19 0x9BB54C9EAC9542669A7F48C67668BA2E75FBD5 PUSH31 0x290000000000000000000000000000000000000000000000000000000000 ",
+			"sourceMap": "25:71:0:-;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "10600",
+				"executionCost": "20172",
+				"totalCost": "30772"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"name": "_x",
+					"type": "uint256"
+				}
+			],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		}
+	]
+}

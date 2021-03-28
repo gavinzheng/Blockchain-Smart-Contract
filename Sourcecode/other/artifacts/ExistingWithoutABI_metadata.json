@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "setA_Signature",
+				"outputs": [
+					{
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_t",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/contractcall.sol": "ExistingWithoutABI"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/contractcall.sol": {
+			"keccak256": "0x2e8c1f41ed9c4bef0e0135cef007407240fc3fe2908f1ce508a13781b42fbc19",
+			"urls": [
+				"bzzr://36d888326154fa95741bd03fd415dc262a3db590a041523f3bd47c68407f9759"
+			]
+		}
+	},
+	"version": 1
+}

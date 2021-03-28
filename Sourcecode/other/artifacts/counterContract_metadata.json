@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.7.1+commit.f4a555be"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "incrementCounter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "toggleContractStopped",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"incrementCounter()": {
+					"notice": "如果合约为活跃状态，则将计数器加2 如果合约为终止状态，则什么都不做。因为这里有isNotStopped修饰符"
+				},
+				"toggleContractStopped()": {
+					"notice": "终止或者重开"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/countercontract.sol": "counterContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/countercontract.sol": {
+			"keccak256": "0xb67ee3023153d83cfd70b459d2cc0bf5ce5dfad9da7e57024772130771aff7a5",
+			"urls": [
+				"bzz-raw://00fa6914e451428a9c9b1cac9d65a72458c1a32d5f5eb4d8a326a876b5fbdb28",
+				"dweb:/ipfs/QmabrXXAPRqrK6MY2pMts6NiK2Y7rgth6A5fdtTNo9bj2N"
+			]
+		}
+	},
+	"version": 1
+}

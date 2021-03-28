@@ -1,0 +1,62 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50605d600080636f0f9b4e81526020019081526020016000208190555060358060396000396000f3006080604052600080fd00a165627a7a72305820db3149cd6be8ce09a51cef4cb00bd7bb46d02f440d7ae7ca50a16b1bb2f228620029",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x5D PUSH1 0x0 DUP1 PUSH4 0x6F0F9B4E DUP2 MSTORE PUSH1 0x20 ADD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x0 KECCAK256 DUP2 SWAP1 SSTORE POP PUSH1 0x35 DUP1 PUSH1 0x39 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xdb BALANCE 0x49 0xcd PUSH12 0xE8CE09A51CEF4CB00BD7BB46 0xd0 0x2f DIFFICULTY 0xd PUSH27 0xE7CA50A16B1BB2F228620029000000000000000000000000000000 ",
+			"sourceMap": "26:139:0:-;;;96:66;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:66:0;150:4;127:7;:20;136:10;127:20;;;;;;;;;;;:27;;;;26:139;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052600080fd00a165627a7a72305820db3149cd6be8ce09a51cef4cb00bd7bb46d02f440d7ae7ca50a16b1bb2f228620029",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 0xdb BALANCE 0x49 0xcd PUSH12 0xE8CE09A51CEF4CB00BD7BB46 0xd0 0x2f DIFFICULTY 0xd PUSH27 0xE7CA50A16B1BB2F228620029000000000000000000000000000000 ",
+			"sourceMap": "26:139:0:-;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "10600",
+				"executionCost": "20158",
+				"totalCost": "30758"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"payable": false,
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "a1",
+						"type": "address"
+					},
+					{
+						"name": "a2",
+						"type": "address"
+					},
+					{
+						"name": "a3",
+						"type": "address"
+					},
+					{
+						"name": "a4",
+						"type": "address"
+					},
+					{
+						"name": "a5",
+						"type": "address"
+					},
+					{
+						"name": "a6",
+						"type": "address"
+					}
+				],
+				"name": "testoverflow",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/overflow.sol": "overflowContract"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/overflow.sol": {
+			"keccak256": "0x189000b69b146d1082beda2417b2e9a40436db01d54828492656e8647068450d",
+			"urls": [
+				"bzzr://584b3dad77576d8a7b10beb01eb96fa3adf225f38d20c86311cff743a467720c"
+			]
+		}
+	},
+	"version": 1
+}
