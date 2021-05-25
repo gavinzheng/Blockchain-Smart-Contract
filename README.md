@@ -4,7 +4,7 @@
 区块链智能合约是区块链系列教材（由电子工业出版社和IBM中国负责组织和出版）中的一本。 
 
 ![编委会](https://gitee.com/gavinzheng731/blockchain-and-smart-contract/raw/master/image/%E7%BC%96%E5%A7%94%E4%BC%9A.png)
-![本书封面](https://gitee.com/suiboyu/myImg/raw/master/GIF%202020-5-14%208-30-42.gif)
+![本书封面](https://github.com/gavinzheng/Blockchain-Smart-Contract/blob/master/image/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%B0%81%E9%9D%A2.jpg)
 
 ### 网站结构
 本网站包括所有学生学习本教材的相关资料：
