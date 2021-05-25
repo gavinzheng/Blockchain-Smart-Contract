@@ -4,6 +4,8 @@ A curated list of Rust code and resources.
 
 If you want to contribute, please read [this](CONTRIBUTING.md).
 
+https://github.com/kud1ing/awesome-rust
+
 ## Table of Contents
 
 - [Applications written in Rust](#applications-written-in-rust)

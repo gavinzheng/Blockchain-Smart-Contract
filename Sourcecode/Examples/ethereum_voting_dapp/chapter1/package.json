@@ -1,0 +1,15 @@
+{
+  "name": "ethereum_voting_dapp",
+  "version": "1.0.0",
+  "description": "Tutorial series by Mahesh Murthy: https://github.com/maheshmurthy/ethereum_voting_dapp",
+  "main": "index.js",
+  "dependencies": {
+    "ganache-cli": "^6.9.1",
+    "solc": "^0.6.4",
+    "web3": "^1.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node_modules/.bin/testrpc"
+  }
+}

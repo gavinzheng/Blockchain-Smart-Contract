@@ -1,5 +1,6 @@
 https://zhuanlan.zhihu.com/p/173576039
 
+https://github.com/substrate-developer-hub/awesome-substrate
 
 ## 官方文档
 https://substrate.dev
